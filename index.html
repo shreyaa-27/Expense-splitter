@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Expense Splitter</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Expense Splitter</h1>
+
+    <div class="add-user">
+      <input type="text" id="userName" placeholder="Enter User Name">
+      <button onclick="addUser()">Add User</button>
+    </div>
+
+    <div class="users-list">
+      <h3>Users:</h3>
+      <ul id="userList"></ul>
+    </div>
+
+    <div class="add-expense">
+      <input type="text" id="expenseDescription" placeholder="Expense Description">
+      <input type="number" id="expenseAmount" placeholder="Expense Amount (₹)">
+      <select id="expenseUser">
+        <option value="">Select User</option>
+      </select>
+      <button onclick="addExpense()">Add Expense</button>
+    </div>
+
+    <div class="balance">
+      <h3>Balance:</h3>
+      <ul id="balanceList"></ul>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
